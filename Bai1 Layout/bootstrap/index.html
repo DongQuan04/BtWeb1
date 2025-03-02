@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mê thú cưng</title>
+
+    <!-- Liên kết Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <style>
+        .navbar {
+            background-color: green;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link.active {
+            background-color: orange;
+            color: black;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            min-height: 200px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: rgb(10, 180, 247);
+            color: rgb(19, 1, 1);
+            padding: 20px;
+            text-align: center ;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Mê Thú Cưng</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Danh sách sản phẩm -->
+            <div class="col-lg-9">
+                <div class="row">
+                    <!-- Mỗi sản phẩm là một cột -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card product-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Golden_Retriever_Dukedestiny01_drvd.jpg/640px-Golden_Retriever_Dukedestiny01_drvd.jpg" class="card-img-top" alt="Chó Golden">
+                            <div class="card-body">
+                                <h5 class="card-title">Chó</h5>
+                                <p class="card-text">Giống chó Golden.</p>
+                                <p class="fw-bold">Giá: 8.000.000 VND</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                                <a href="chitiet1.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card product-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/GermanShep1_wb.jpg" class="card-img-top" alt="Chó Bẹc Giê">
+                            <div class="card-body">
+                                <h5 class="card-title">Chó</h5>
+                                <p class="card-text">Giống chó Bẹc Giê.</p>
+                                <p class="fw-bold">Giá: 10.000.000</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                                <a href="chitiet2.html" class="btn btn-primary">Chi tiết</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card product-card">
+                            <img src="https://images.wsj.net/im-26353467?width=1280&size=1" class="card-img-top" alt="Mèo Đen">
+                            <div class="card-body">
+                                <h5 class="card-title">Mèo</h5>
+                                <p class="card-text">Mèo đen cao cấp.</p>
+                                <p class="fw-bold">Giá: 2.000.000 VND</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                                <a href="chitiet5.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card product-card">
+                            <img src="https://www.catsexclusive.com/images/sections/407.jpeg" class="card-img-top" alt="Mèo Lông Xù">
+                            <div class="card-body">
+                                <h5 class="card-title">Mèo</h5>
+                                <p class="card-text">Mèo lông xù.</p>
+                                <p class="fw-bold">Giá: 1.000.000 VND </p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                                <a href="chitiet4.html" class="btn btn-primary">Chi tiết</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card product-card">
+                            <img src="https://www.shutterstock.com/image-photo/white-stray-cat-one-eye-600nw-2371482543.jpg" class="card-img-top" alt="Mèo Trắng">
+                            <div class="card-body">
+                                <h5 class="card-title">Mèo</h5>
+                                <p class="card-text">Mèo trắng dễ thương.</p>
+                                <p class="fw-bold">Giá: 2.150.000 VND </p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                                <a href="chitiet3.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="card product-card">
+                            <img src="https://bizweb.dktcdn.net/100/091/443/products/hieuunganh-com-5ec1f71bcd89a.png?v=1594864186107" class="card-img-top" alt="Đồ Ăn Thú Cưng">
+                            <div class="card-body">
+                                <h5 class="card-title">Đồ ăn</h5>
+                                <p class="card-text">Đồ ăn thú cưng Ganador.</p>
+                                <p class="fw-bold">Giá: 200.000 VND</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                                <a href="chitiet6.html" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="bg-primary text-white p-3 text-center">
+                    <h5>Social Media</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 footer">
+                <h3>Về chúng tôi</h3>
+                <p>Chuyên cung cấp thú cưng và đồ ăn chất lượng.</p>
+                <p>Đảm bảo các nguồn cung đều uy tín và bản quyền</p>
+            </div>
+            <div class="col-md-5 footer">
+                <h3>Thông tin liên hệ</h3>
+                <p>Email: Dongquanstore.com</p>
+                <p>Hotline: 098712345</p>
+            </div>
+            <div class="col-md-5 footer">
+                <h3>Theo dõi chúng tôi</h3>
+                <p><div>Facebook</div></p>
+                <p><div>Isntagram</div></p>
+                <p><Div>Youtube</Div></p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nhúng Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cấu trúc chính */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Chia layout thành 2 phần: 75% sản phẩm - 25% sidebar */
+    gap: 20px;
+}
+
+/* Header */
+header {
+    background-color: #c7cc19;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffa486;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-column: 1;
+}
+
+/* Card sản phẩm */
+.product-card {
+    background: rgb(246, 247, 244);
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Nút "Mua Ngay" */
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #037c53;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #199cff;
+    color: white;
+    padding: 20px;
+    grid-column: 2;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+/* Layout cho màn hình nhỏ (mobile) */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebar {
+        grid-column: 1;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+
+
+
+
+
+
+
+
